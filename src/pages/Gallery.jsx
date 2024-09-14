@@ -50,16 +50,16 @@ const Gallery = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">
+    <div className="mx-auto px-4 py-8">
+      <h2 className="text-4xl font-bold text-gray-800 text-center mb-8 ">
         Photo Gallery
       </h2>
       {/* Horizontal Scrollable Image Slider */}
-      <div className="flex overflow-x-auto space-x-4 py-4">
+      <div className="flex overflow-x-auto scroll touch-pan-x space-x-4 py-4">
         {images.map((src, index) => (
           <div
             key={index}
-            className="flex-shrink-0 w-96 h-80 overflow-hidden rounded-lg shadow-lg cursor-pointer"
+            className="flex-shrink-0 w-64 h-64 lg:w-96 lg:h-96 overflow-hidden rounded-lg shadow-lg cursor-pointer"
             onClick={() => openModal(index)}
           >
             <img

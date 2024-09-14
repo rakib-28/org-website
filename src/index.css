@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll {
+  scrollbar-color: rgb(235, 234, 234) white;
+}
